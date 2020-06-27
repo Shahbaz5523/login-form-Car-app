@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.loginContainer{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    color: #e8491d;
+    font-family: 'Mos';
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    background-color:#35424a;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0px gray;
+    background: linear-gradient(to top,#35424a,#222);
+}
+.loginContainer form{
+    height: 100%;
+    display: flex;
+    color: #35424a;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 40%);
+    justify-content: center;
+    background-color: #222;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form section{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginContainer form div{
+    margin: 20px;
+}
+.loginContainer form div label{
+    margin: 5px;
+    color: #fff;
+    font-size: large;
+}
+.loginContainer form div input{
+    margin: 5px;
+    width: 300px;
+    font-size: 20px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border-color: #ccc;
+    background-color: #eee;
+}
+.loginContainer form button{
+    width: 200px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    padding: 15px 20px;
+    border-radius : 50px;
+    transition: box-shadow 0.5s ease-in-out;
+    background: linear-gradient(to right,#e8491d,red);
+}
+.loginContainer .imgContainer{
+    width: 40%;
+    height: 100%;
+    background: url(istockphoto-1171634924-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgContainer .effect{
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.61);
+    /* background: linear-gradient(to bottom,rgba(0, 0, 0, 0.452),rgba(255, 255, 255, 0.178)); */
+}
+.effect div{
+    padding: 10px;
+}
+.effect div h1{
+    margin: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.effect div p{
+    margin: 20px;
+    font-weight: 300;
+    font-size: large;
+    text-align: center;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.effect button{
+    width: 200px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: large;
+    padding: 15px 20px;
+    border-radius : 50px;
+    border-color: white;
+    background-color: transparent;
+    transition: box-shadow 0.5s ease-in-out;
+    /* background: linear-gradient(to right,#e8491d,red); */
+}
+.effect button:active{
+    transform: scale(0.95);
+}
+.effect button:hover{
+    box-shadow: 0px 0px 50px 0px gray inset;
+}
+@media screen and (max-width:668px){
+    .loginContainer .imgContainer{
+        display: none;
+    }   
+    form{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:412px){
+    .loginContainer{
+        height: auto !important;
+    }
+    form{
+        height: auto !important;
+        width: 100% !important;
+    }
+    form h1{
+        font-size: 2rem !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (max-width:374px){
+    form div{
+        margin: 5px !important;
+    }
+    form input{
+        width: 250px !important;
+    }
+}
+@media screen and (max-width:319px){
+    form h1{
+        font-size: 1.5rem !important;
+    }
+}
